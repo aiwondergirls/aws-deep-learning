@@ -27,3 +27,29 @@
  ```
 
 
+## Use Habana drivers 
+Add the following lines at the python script 
+
+```python
+	import habana_frameworks.tensorflow as htf
+	htf.load_habana_module()
+```
+
+## Load dataset 
+
+Configure GAN.py with the following parameters when training:
+```python
+	inputpath="Female_painters/*"
+	loadNewData =True 
+```
+
+Setting the directory where the data is and the boolean loadNewData True means that new data is loaded and the training_data.npy file is generated. Therefore in futrure training of the GAN with the same data it is not necessary to load the folder again. 
+
+## Execute GAN
+
+```bash
+	python3 GAN.py
+```
+
+Intermadiate results would be at generated_images and models folders 
+

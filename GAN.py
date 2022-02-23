@@ -213,6 +213,6 @@ train(noiseShape=(100, ),
 	batchSize = 32, 
 	learningRate = .0002, 
 	saveFreq = 100, 
-	inputPath = "abstract/*", 
+	inputPath = "Female_painters/*", 
 	loadNewData = False)
 
