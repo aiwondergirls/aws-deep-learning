@@ -3,3 +3,4 @@ Pillow
 matplotlib
 python-osc
 numpy
+torch

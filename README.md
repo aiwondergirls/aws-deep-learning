@@ -1,6 +1,15 @@
 # aws-deep-learning
 
-## Installation 
+In the aws deep learning project we used Deep Learning to create poetry and paintings.
+
+## Paintings
+
+We use a generative adversarial network (GAN) to create images of female artists. Our is based on the wikiart data (https://www.wikiart.org/), which was searched for paintings by artists contained in the wikipedia list of female artists https://en.wikipedia.org/wiki/Lists_of_women_artists. Selecting only those yielded a dataset of 66 artists and 2632 images.
+
+### Technical details
+#### The model
+
+#### Installation 
 1. Launch habana instance https://docs.habana.ai/en/latest/AWS_EC2_Getting_Started/AWS_EC2_Getting_Started.html 
 2. Install Synapse 
 ```bash
@@ -32,7 +41,7 @@
 	pip install -r requirements.txt 
 ```
 
-## Use Habana drivers 
+#### Use Habana drivers 
 Add the following lines at the python script 
 
 ```python
@@ -50,7 +59,7 @@ Configure GAN.py with the following parameters when training:
 
 Setting the directory where the data is and the boolean loadNewData True means that new data is loaded and the training_data.npy file is generated. Therefore in futrure training of the GAN with the same data it is not necessary to load the folder again. 
 
-## Execute GAN
+#### Execute GAN
 
 ```bash
 	python3 GAN.py
