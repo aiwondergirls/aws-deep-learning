@@ -21,15 +21,16 @@ ATHENA also allows users to create its own art work based on the work of female 
 The ATHENA Art Assistant is built using TensorFlow and PyTorch libraries integrated to the AWS DL1 instance via a continuous integration deployment, where the two different AI applications are trained.
 
 Details of implementation of each feature in the application are:
-- **AI Paintings:**We use a generative adversarial network (GAN) to create images of female artists. Our is based on the wikiart data (https://www.wikiart.org/), which was searched for paintings by artists contained in the wikipedia list of female artists https://en.wikipedia.org/wiki/Lists_of_women_artists. Selecting only those yielded a dataset of 66 artists and 2632 images.
-- **AI Poetry:** implementation was done by training a Long Short Term Memory (LSTM) Recurrent Neural Network on the Poetry Foundation Kaggle Dataset. In order to consider only female, non-binary and transgender poets, the list poets from the dataset was tagged following the labels: Male (M), Female (F), Transgender (T), Non-Binary (NB).
+- **AI Paintings:** We use a generative adversarial network (GAN) to create images of female artists. Our is based on the wikiart data (https://www.wikiart.org/), which was searched for paintings by artists contained in the wikipedia list of female artists https://en.wikipedia.org/wiki/Lists_of_women_artists. Selecting only those yielded a dataset of 66 artists and 2632 images.
+- **AI Poetry:** The implementation was done by training a Long Short Term Memory (LSTM) Recurrent Neural Network on the Poetry Foundation Kaggle Dataset. In order to consider only female, non-binary and transgender poets, the list poets from the dataset was tagged following the labels: Male (M), Female (F), Transgender (T), Non-Binary (NB).
 
 
 ## Challenges we ran into
 - Finding Art data labelled in terms of gender/sex
 - Identifying Open Source art works that represent minorities such as women, LGBTQ and people of color groups
 
-##Accomplishments that we're proud of
+## Accomplishments  
+
 We are proud that we overcame our challenges with creativity and team work and built a data-centric pipeline that encompasses advanced AI techniques. We are also proud to contribute with a new feature to an existing open source initiative created by our team.
 
 ## What we learned
