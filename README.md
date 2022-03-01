@@ -26,6 +26,11 @@
 	source ~/.bashrc
  ```
 
+7. Install python dependencies to run the GAN.py 
+
+```bash
+	pip install -r requirements.txt 
+```
 
 ## Use Habana drivers 
 Add the following lines at the python script 
